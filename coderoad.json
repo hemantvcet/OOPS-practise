@@ -1,0 +1,135 @@
+{
+  "title": "Day 99 - OOP Classes Practice",
+  "description": "Implement real-world classes in C++ with proper methods and edge case handling.",
+  "files": [
+    "main.cpp"
+  ],
+  "steps": [
+    {
+      "title": "Setup Customer Class",
+      "instructions": "Create a class Customer with attributes: name (string), accountNumber (int), accountBalance (double), isActive (bool). Also create a constructor.",
+      "hints": [
+        "Use private attributes",
+        "Initialize using constructor"
+      ]
+    },
+    {
+      "title": "Implement Deposit",
+      "instructions": "Add a method deposit(double amount) that increases accountBalance.",
+      "hints": [
+        "Check amount > 0"
+      ]
+    },
+    {
+      "title": "Implement Withdraw",
+      "instructions": "Add withdraw(double amount). Prevent withdrawal if balance is insufficient.",
+      "hints": [
+        "Use if(accountBalance >= amount)"
+      ]
+    },
+    {
+      "title": "Implement Transfer",
+      "instructions": "Create transfer(double amount, Customer &target). Deduct from sender and add to receiver.",
+      "hints": [
+        "Pass object by reference",
+        "Reuse withdraw + deposit logic"
+      ]
+    },
+    {
+      "title": "Print Customer Details",
+      "instructions": "Create printDetails() to display name, account number and balance.",
+      "hints": []
+    },
+    {
+      "title": "Test Customer Class",
+      "instructions": "Create 2 Customer objects in main() and perform deposit, withdraw and transfer.",
+      "hints": [
+        "Test edge cases like low balance"
+      ]
+    },
+
+    {
+      "title": "Setup Car Class",
+      "instructions": "Create class Car with model, year, fuelLevel, speed, isRunning.",
+      "hints": [
+        "Initialize speed = 0",
+        "Initialize isRunning = false"
+      ]
+    },
+    {
+      "title": "Engine Methods",
+      "instructions": "Implement startEngine() and stopEngine().",
+      "hints": []
+    },
+    {
+      "title": "Acceleration Logic",
+      "instructions": "Implement accelerate(int amount). Increase speed only if engine is ON and fuel > 0.",
+      "hints": [
+        "Check isRunning before accelerating"
+      ]
+    },
+    {
+      "title": "Brake Logic",
+      "instructions": "Implement brake(int amount). Ensure speed does not go below 0.",
+      "hints": [
+        "Use max(0, speed - amount)"
+      ]
+    },
+    {
+      "title": "Refuel",
+      "instructions": "Add refuel(double amount). Cap fuelLevel at 100.",
+      "hints": [
+        "Use min(100, fuelLevel + amount)"
+      ]
+    },
+    {
+      "title": "Print Car Status",
+      "instructions": "Display model, speed, fuelLevel and running state.",
+      "hints": []
+    },
+
+    {
+      "title": "Setup Laptop Class",
+      "instructions": "Create class Laptop with brand, screenSize, processor, ram, storage, batteryLevel, isOn.",
+      "hints": []
+    },
+    {
+      "title": "Power Control",
+      "instructions": "Implement powerOn() and powerOff().",
+      "hints": []
+    },
+    {
+      "title": "Open Apps",
+      "instructions": "Implement openApps(int numApps). Reduce battery by numApps * 2.",
+      "hints": [
+        "Battery should not go below 0"
+      ]
+    },
+    {
+      "title": "Close Apps",
+      "instructions": "Implement closeApps(int numApps). Increase battery slightly.",
+      "hints": []
+    },
+    {
+      "title": "Charging Logic",
+      "instructions": "Implement charge(double amount). Cap battery at 100.",
+      "hints": [
+        "Use min(100, batteryLevel + amount)"
+      ]
+    },
+    {
+      "title": "Print Laptop Specs",
+      "instructions": "Display all laptop details.",
+      "hints": []
+    },
+
+    {
+      "title": "Final Integration",
+      "instructions": "In main(), create objects of all three classes and simulate real-world operations. Show outputs clearly.",
+      "hints": [
+        "Do at least 3 operations per class",
+        "Test edge cases"
+      ]
+    }
+  ]
+}
